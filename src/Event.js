@@ -4,22 +4,25 @@ class Event extends Component {
   state = {
     showDetails: false,
   };
-  handleShowHideButton = () => [
-    this.setState((prevState) => ({ showDetails: !prevState.showDetails })),
-  ];
+  handleShowHideButton = () => {
+    this.setState((prevState) => ({ showDetails: !prevState.showDetails }));
+  };
   render() {
     const { event } = this.props;
     return (
       <div className="Event">
-        <h1>{event.summary}</h1>
+        <h1 className="summary">{event.summary}</h1>
         {this.state.showDetails && (
           <div className="event-details">
             <p>{event.description}</p>
-            <p>{event.location}</p>
+            <p className="location">{event.location}</p>
+            <p className="date-time">
+              {event.start.dateTime} ({event.start.timeZone})
+            </p>
           </div>
         )}
-        <button onClick={this.handleShowHideButton}>
-          {this.state.showDetails ? 'Hide details' : "Show details"}
+        <button className="details-btn" onClick={this.handleShowHideButton}>
+          {this.state.showDetails ? "Hide details" : "Show details"}
         </button>
       </div>
     );
