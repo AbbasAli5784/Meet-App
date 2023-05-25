@@ -40,7 +40,6 @@ describe("<App /> integration", () => {
     const selectedIndex = Math.floor(Math.random() * suggestions.length);
     const selectedCity = suggestions[selectedIndex];
     await CitySearchWrapper.instance().handleItemClick(selectedCity);
-    // await AppWrapper.update();
     expect(eventsToShow.length).toBeGreaterThan(0);
     // AppWrapper.unmount();
   });

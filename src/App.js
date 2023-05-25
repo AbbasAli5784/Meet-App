@@ -10,6 +10,7 @@ class App extends Component {
   state = {
     events: [],
     locations: [],
+    numberOfEvents: 32,
   };
 
   async componentDidMount() {
@@ -21,7 +22,7 @@ class App extends Component {
   }
 
   componentWillUnmount() {
-    this._isMounted = false; 
+    this._isMounted = false;
   }
 
   updateEvents = (location) => {
@@ -32,6 +33,7 @@ class App extends Component {
           : events.filter((event) => event.location === location);
       this.setState({
         events: locationEvents,
+        numberOfEvents: events.length,
       });
     });
   };

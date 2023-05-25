@@ -31,9 +31,9 @@ describe("<CitySearch /> component", () => {
     CitySearchWrapper.setState({
       query: "Munich",
     });
-    const eventObject = { target: { value: "Berlin" } };
+    const eventObject = { target: { value: "Berlin, Germany" } };
     CitySearchWrapper.find(".city").simulate("change", eventObject);
-    expect(CitySearchWrapper.state("query")).toBe("Berlin");
+    expect(CitySearchWrapper.state("query")).toBe("Berlin, Germany");
   });
 
   test("render list of suggestions correctly", () => {
