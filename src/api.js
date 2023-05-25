@@ -1,8 +1,6 @@
 import { mockData } from "./mock-data";
-import axios from "axios";
-import nProgress from "nprogress";
-
-const NProgress = nProgress();
+// import axios from "axios";
+import NProgress from "nprogress";
 
 const checkToken = async (accessToken) => {
   const result = await fetch(
@@ -49,7 +47,7 @@ export const getEvents = async () => {
 
   if (window.location.href.startsWith("http://localhost")) {
     NProgress.done();
-    return mockData;
+    return mockData.items;
   }
 
   const token = await getAccessToken();
