@@ -14,6 +14,7 @@ const credentials = {
   auth_provider_x509_cert: "https://www.googleapis.com/oauth2/v1/certs",
   redirect_uris: ["https://abbasali5784.github.io/Meet-App/"],
   javascript_origins: [
+    "https://merry-unicorn-531362.netlify.app",
     "https://abbasali5784.github.io",
     "http://localhost:3000",
   ],
