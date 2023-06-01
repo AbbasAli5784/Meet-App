@@ -67,7 +67,7 @@ module.exports.getAccessToken = async (event) => {
         statusCode: 200,
         headers: {
           "Access-Control-Allow-Origin": "*",
-          // "Access-Control-Allow-Credentials": true,
+          "Access-Control-Allow-Credentials": true,
         },
         body: JSON.stringify(token),
       };
