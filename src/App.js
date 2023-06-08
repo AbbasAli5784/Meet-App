@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import "./App.css";
+
 import EventList from "./EventList";
 import CitySearch from "./CitySearch";
 import { getEvents, extractLocations } from "./api";
 import NumberOfEvents from "./NumberOfEvents";
-import "./styles.css";
 
 class App extends Component {
   _isMounted = false;

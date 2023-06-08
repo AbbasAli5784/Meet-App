@@ -13,14 +13,14 @@ class NumberOfEvents extends Component {
   render() {
     const { eventCount } = this.state;
     return (
-      <div className="NumberOfEvents">
+      <div className="numberOfEvents">
         <label htmlFor="event-number-input">Number of Events:</label>
         <input
           type="number"
           className="number"
           value={this.state.eventCount}
           onChange={this.handleInputChanged}
-          id="event-number-input"
+          id="numberOfEvents__input"
           max="32"
         />
         <button onClick={() => this.props.updateEvents(undefined, eventCount)}>
