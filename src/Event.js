@@ -26,7 +26,7 @@ class Event extends Component {
             </p>
           </div>
         )}
-        <button onClick={this.handleShowHideButton}>
+        <button className="details-btn" onClick={this.handleShowHideButton}>
           {this.state.showDetails ? "Hide details" : "Show details"}
         </button>
       </div>

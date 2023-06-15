@@ -17,7 +17,7 @@ class App extends Component {
   async componentDidMount() {
     this._isMounted = true;
     const events = await getEvents();
-    console.log("Fetched events: ", events);
+    // console.log("Fetched events: ", events);
     if (this._isMounted) {
       this.setState({
         events: events.slice(0, this.state.numberOfEvents),

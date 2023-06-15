@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 
+
 class NumberOfEvents extends Component {
+  
   state = {
     eventCount: 32,
   };
@@ -23,7 +25,10 @@ class NumberOfEvents extends Component {
           id="numberOfEvents__input"
           max="32"
         />
-        <button onClick={() => this.props.updateEvents(undefined, eventCount)}>
+        <button
+          className="update-btn"
+          onClick={() => this.props.updateEvents(undefined, eventCount)}
+        >
           Update
         </button>
       </div>
