@@ -20,18 +20,14 @@ api.js: Handles API calls to fetch event data.
 
 
 Getting Started
-Clone the repository:
 
-git clone https://github.com/AbbasAli5784/Meet-App.git
-Navigate to the project directory:
+Clone the repository:git clone https://github.com/AbbasAli5784/Meet-App.git
 
-cd Meet-App
-Install dependencies:
+Navigate to the project directory:cd Meet-App
 
-npm install
-Run the application:
+Install dependencies:npm install
 
-npm start
+Run the application:npm start
 
 
 
